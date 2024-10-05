@@ -11,10 +11,10 @@
     "diagrams": [
       {
         "id": 2,
-        "title": "New CIA diagram",
-        "diagramType": "CIA",
-        "placeholder": "New CIA diagram description",
-        "thumbnail": "./public/content/images/thumbnail.cia.jpg",
+        "title": "New generic diagram",
+        "diagramType": "Generic",
+        "placeholder": "New generic diagram description",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
         "version": "2.2.0",
         "cells": []
       }
