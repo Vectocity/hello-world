@@ -87,8 +87,8 @@
           },
           {
             "position": {
-              "x": 652,
-              "y": 230
+              "x": 603.75,
+              "y": 428
             },
             "size": {
               "width": 112.5,
@@ -111,7 +111,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "System admins",
-              "description": "",
+              "description": "Systems admins monitoring and approving deletion requests",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -195,101 +195,6 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Input Queries",
-              "description": "Queries for schedule, user registration, buy tickets, check-in, buy VIP levels, data ",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "c83724e5-40cf-47dc-8ad6-d6ebe6b6a3e8",
-            "source": {
-              "cell": "f8841eb5-0808-48ae-a637-bc8b221a1609"
-            },
-            "target": {
-              "cell": "0d857d49-addc-4f62-9203-aa9ba493f397"
-            },
-            "vertices": [
-              {
-                "x": 350,
-                "y": 130
-              },
-              {
-                "x": 300,
-                "y": 170
-              },
-              {
-                "x": 320,
-                "y": 210
-              }
-            ],
-            "labels": [
-              "Input Queries"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "id": "d68d7d12-1510-4f38-9e99-5ac9492068dc",
-            "source": {
-              "cell": "0d857d49-addc-4f62-9203-aa9ba493f397"
-            },
-            "target": {
-              "cell": "a72eb298-a629-4720-bddb-69eeeed570a9"
             }
           },
           {
@@ -400,9 +305,300 @@
             "vertices": []
           },
           {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "17ebd59c-c452-4187-9bb8-e7382b03676c",
+            "source": {
+              "x": 120,
+              "y": 370
+            },
+            "target": {
+              "x": 280,
+              "y": 520
+            },
+            "vertices": [
+              {
+                "x": 250,
+                "y": 390
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Deletion Information",
+              "description": "Deletion requests",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "c789a34f-fa6a-4f21-9f9c-f7e2bae43eee",
+            "source": {
+              "cell": "a72eb298-a629-4720-bddb-69eeeed570a9"
+            },
+            "target": {
+              "cell": "294f39ee-02dd-4eb8-8f96-2a0fe3f2b76c"
+            },
+            "labels": [
+              "Deletion Information"
+            ],
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "0cf57f23-46d5-4364-9ce1-2c1b1dfff46b",
+            "source": {
+              "cell": "294f39ee-02dd-4eb8-8f96-2a0fe3f2b76c"
+            },
+            "target": {
+              "cell": "a540cbc3-35ff-48ce-a369-b9b693ccd884"
+            },
+            "vertices": [
+              {
+                "x": 410,
+                "y": 530
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "4e78c0f4-015c-4948-abc0-f27cb7ab9fe6",
+            "source": {
+              "cell": "b3359b71-b5c3-466c-98cf-e2f07595ec44"
+            },
+            "target": {
+              "cell": "0d857d49-addc-4f62-9203-aa9ba493f397"
+            },
+            "vertices": [
+              {
+                "x": 503.75,
+                "y": 354
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "Registration, vendor and event information access requests, deletion requests",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "b6bbeaa0-061e-4079-a0e3-42d9658afb6a",
+            "source": {
+              "cell": "f8841eb5-0808-48ae-a637-bc8b221a1609"
+            },
+            "target": {
+              "cell": "0d857d49-addc-4f62-9203-aa9ba493f397"
+            },
+            "vertices": [
+              {
+                "x": 320,
+                "y": 180
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "Event scheduling, vendor information, payment and deletion confirmation",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "179498cc-7389-4bae-aec7-89dd5d1eb23d",
+            "source": {
+              "cell": "0d857d49-addc-4f62-9203-aa9ba493f397"
+            },
+            "target": {
+              "cell": "f8841eb5-0808-48ae-a637-bc8b221a1609"
+            },
+            "vertices": [
+              {
+                "x": 490,
+                "y": 180
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "User Registration, Payment Events, VIP Status",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "57a9c796-3ebe-44d6-a850-16f26c469bde",
+            "source": {
+              "cell": "0d857d49-addc-4f62-9203-aa9ba493f397"
+            },
+            "target": {
+              "cell": "a72eb298-a629-4720-bddb-69eeeed570a9"
+            }
+          },
+          {
             "position": {
-              "x": 490,
-              "y": 428
+              "x": 603.75,
+              "y": 230
             },
             "size": {
               "width": 120,
@@ -438,6 +634,167 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 603.75,
+              "y": 324
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Event Scheduling Information"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "b3359b71-b5c3-466c-98cf-e2f07595ec44",
+            "zIndex": 13,
+            "data": {
+              "type": "tm.Store",
+              "name": "Event Scheduling Information",
+              "description": "Database with event schedules",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 264,
+              "y": 147
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Request Queries"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "2677d001-7440-400e-a66b-579f099bb304",
+            "zIndex": 14,
+            "data": {
+              "type": "tm.Text",
+              "name": "Request Queries",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 436,
+              "y": 147
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Query returns"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "dd6cf311-f8e7-4b27-bacb-af59193d5661",
+            "zIndex": 15,
+            "data": {
+              "type": "tm.Text",
+              "name": "Query returns",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 463,
+              "y": 278
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Vendor and Schedule updates"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "9371baf2-f5c0-45e6-bffb-85072293fed4",
+            "zIndex": 16,
+            "data": {
+              "type": "tm.Text",
+              "name": "Vendor and Schedule updates",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 480,
+              "y": 410
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Deletion requests"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "792535dc-cbef-4775-89b3-f80f699232df",
+            "zIndex": 17,
+            "data": {
+              "type": "tm.Text",
+              "name": "Deletion requests",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 600,
+              "y": 488
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "3rd Party Record Deletion Requests"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "417e31c0-c197-4538-baf6-347a16820e1f",
+            "zIndex": 18,
+            "data": {
+              "type": "tm.Text",
+              "name": "3rd Party Record Deletion Requests",
+              "hasOpenThreats": false
             }
           }
         ]
