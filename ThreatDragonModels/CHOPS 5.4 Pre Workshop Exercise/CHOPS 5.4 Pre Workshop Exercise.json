@@ -596,6 +596,68 @@
             }
           },
           {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "4519aa31-ad9f-455f-9b6d-681aeb29fb20",
+            "source": {
+              "x": 210,
+              "y": 60
+            },
+            "target": {
+              "x": 610,
+              "y": 60
+            },
+            "vertices": [
+              {
+                "x": 410,
+                "y": 160
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "id": "66339d7d-7bb1-43e8-aa4a-57b0e2217e90",
+            "source": {
+              "x": 610,
+              "y": 170
+            },
+            "target": {
+              "x": 600,
+              "y": 400
+            },
+            "vertices": [
+              {
+                "x": 538,
+                "y": 250
+              },
+              {
+                "x": 538,
+                "y": 310
+              }
+            ]
+          },
+          {
             "position": {
               "x": 603.75,
               "y": 230
